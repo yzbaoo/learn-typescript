@@ -5,4 +5,36 @@
   // "exclude": [],
   /*继承*/ 
   // "extends": "",
+
+  "compilerOptions": {
+    // 指定ts被编译的es版本：es5、es6、esnext
+    "target": "ES3",
+    // 模块化 指定要使用模块化规范'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'es2020', 'es2022', 'esnext', 'node12', 'nodenext'.
+    "module": "commonjs",
+    // 指定编译后文件所在目录
+    "outDir": "./dist",
+    // 将多个文件合并到bundle.js中，注：跟module冲突，使用模块化后不可以使用
+    // "outFile": "./dist/bundle.js"
+    // 是否对js文件进行编译，默认false
+    "allowJs": true,
+    // 设置true后，也会检查js文件中的类型，如果不想js文件被类型限制，请设置false
+    "checkJs": true,
+    // 是否移除注释
+    "removeComments": true,
+
+    // 所有严格检查的总开关
+    "strict": false,
+    // 不生成编译后的文件，dist目录下没有任何文件生成，使用场景：只想使用ts检查功能，并不想生成最后的文件
+    "noEmit": false,
+    // true（严格）：有错误时不生成编译文件
+    "noEmitOnError": false,
+    // 开启严格模式，默认false。设置true之后，生成的js会添加 “use strict"
+    "alwaysStrict": true,
+    // true（严格）不允许出现隐式any类型，默认false
+    "noImplicitAny": true,
+    // true（严格）不允许出现隐式this，默认false
+    "noImplicitThis": true,
+    // true（严格）检查对象是否可能为空，避免出现null.fn的调用
+    "strictNullChecks": true,
+  }
 }

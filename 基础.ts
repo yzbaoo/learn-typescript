@@ -23,7 +23,9 @@ if(typeof c === 'number') {
  */
 function f1():void {
   // void表示空，函数可以没有返回值，也可以返回null、undefined
-  return null;
+  // 在 "strictNullChecks": true时，返回null也会报错
+  // return null;
+  return undefined;
 }
 
 function f2():never {
@@ -81,3 +83,9 @@ type bieMing = 1 | 2 | 3 | 4 | 5 | 6;
 // let j: 1 | 2 | 3 | 4 | 5 | 6;
 let i: bieMing;
 let j: bieMing;
+
+
+// noImplicitThis
+function fn(this: any) {
+  return this;
+}
