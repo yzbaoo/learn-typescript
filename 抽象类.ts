@@ -17,7 +17,7 @@ class Dog extends Animal {
   }
 }
 
-const A = new Animal(); // ⚠️无法创建抽象类的实例
+// const A = new Animal(); // ⚠️无法创建抽象类的实例
 
 const D = new Dog('小美', 3);
 console.log(D.sayHello())

@@ -38,4 +38,4 @@ function fn4<T extends MyInter>(a: T): number {
 
 fn4('123'); // 通过编译：字符串有length属性
 fn4({length: 123}); // 通过编译：自定义有length属性的对象
-fn4(123); // 未通过编译：数字没有length属性
+// fn4(123); // 未通过编译：数字没有length属性
