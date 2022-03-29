@@ -8,7 +8,7 @@
 
   "compilerOptions": {
     // 指定ts被编译的es版本：es5、es6、esnext
-    "target": "ES3",
+    "target": "ES5",
     // 模块化 指定要使用模块化规范'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'es2020', 'es2022', 'esnext', 'node12', 'nodenext'.
     "module": "commonjs",
     // 指定编译后文件所在目录
@@ -36,5 +36,7 @@
     "noImplicitThis": true,
     // true（严格）检查对象是否可能为空，避免出现null.fn的调用
     "strictNullChecks": true,
+    // "ES2015"以支持使用es6语法，比如promise；dom以支持setTimeout
+    "lib": ["dom","ES2015"]
   }
 }
